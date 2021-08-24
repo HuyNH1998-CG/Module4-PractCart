@@ -12,7 +12,17 @@ bigg/model/Product.java
  bigg.model.Product
 bigg/model/Cart.java
  bigg.model.Cart
-bigg/controller/ShoppingCartController.java
- bigg.controller.ShoppingCartController
 bigg/controller/ProductController.java
  bigg.controller.ProductController
+bigg/model/Order.java
+ bigg.model.Order
+bigg/model/OrderDetail.java
+ bigg.model.OrderDetail
+bigg/service/OrderService.java
+ bigg.service.OrderService
+bigg/repository/IOrderDetailRepository.java
+ bigg.repository.IOrderDetailRepository
+bigg/repository/IOrderRepository.java
+ bigg.repository.IOrderRepository
+bigg/controller/ShoppingCartController.java
+ bigg.controller.ShoppingCartController

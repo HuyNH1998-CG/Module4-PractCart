@@ -36,6 +36,13 @@ public class ShoppingCartController {
         return new ModelAndView("redirect:/shopping-cart");
     }
 
+    @GetMapping("/delete/{id}")
+    public ModelAndView deleteItem(@PathVariable Long id, @ModelAttribute Cart cart){
+        Optional<Product> productOptional = service.findById(id);
+        cart.removeProduct(productOptional.get());
+        return new ModelAndView("redirect:/shopping-cart");
+    }
+
     @GetMapping("/payment")
     public ModelAndView pay(@ModelAttribute Cart cart){
         cart.emptyCart();

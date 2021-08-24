@@ -27,6 +27,7 @@
            th:text="${'+'}"></a>
       </td>
       <td th:text="${product.getKey().price}"></td>
+      <td><a th:href="@{/delete/{id}(id=${product.getKey().id})}">Delete</a></td>
     </tr>
     <tr>
       <td>Total</td>
